@@ -6,4 +6,12 @@ class ArticlesController < ActionController::Base
   def index
     @articles = Article.all
   end
+
+  def create
+    render plain: params[:article]
+  end
+
+  def new
+    
+  end
 end
