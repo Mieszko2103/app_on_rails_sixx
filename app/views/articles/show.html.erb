@@ -1,3 +1,6 @@
+<% flash.each do |name, msg| %> 
+     <%= msg %> 
+    <% end %>
 <h2>Showing article details: </h2>
 <p> Title: <strong><%= @article.title %></strong></p>
 <p> Title: <strong><%= @article.description %></strong></p>
